@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techshop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-color: black;
+            }
+            .head{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between ;
+                color: white;
+            }
+           h2{
+            margin: 20px;
+           }
+            .nav{
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            ul li{
+                margin: 20px;
+                color: white;
+                padding: 10px;
+            } 
+            .icon-container{
+                position: relative;
+                cursor: pointer;
+            }
+            .search-box, .cart, .profile{
+            position: absolute;
+            right: 0px;
+            top: 50px;
+            padding: 15px;
+            border-radius: 20px;
+            width: 250px;
+            visibility: hidden;
+            z-index: 10;
+        }
+        .search-box {
+            width: 200px;
+        }
+        .icon-container:hover .search-box,
+        .icon-container:hover .cart,
+        .icon-container:hover .profile{
+            opacity: 1;
+            visibility: visible;
+            top: 50px;
+        }
+        .search-box input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+        .cart input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+       .background-text {
+            text-align: center;
+            align-content: center;
+            position:absolute;
+            font-size: 180px; 
+            font-style:normal;
+            color:#333;
+            font-weight:bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            z-index: 2;
+            transform: rotate(360deg);
+            margin: 70px;
+            top: 100px;
+        }
+        .content {
+            position: absolute;
+            z-index: 2;
+            font-size: 20px;
+            color: white;
+            padding: 100px;
+            height: 2000px;
+        }
+        .original-price{
+            text-decoration: line-through;
+        }
+        .button{
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+        .image-right{
+            float: right;
+            margin: 80px;
+        }
+        </style>
+    </head>
+    <body>   
+        <nav class="head">
+            <h2>Tech shop</h2>
+            <ul class="nav" type="none">
+                <li>
+                    <div class="icon-container">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <div class="search-box">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    </div>
+                    </li>
+
+                    <div class="icon-container">
+                <li> <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart">
+                        <input type="text" placeholder="cart">
+                    </div>
+                </div>
+            </li>
+
+            <div class="icon-container">
+                <li> <i class="fa-regular fa-user"></i>
+                    <div class="profile">
+                        <h3>Hello!</h3>
+                        <p>Access account and manage orders</p>
+                        <a href="signin.html">Sign In</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="section">
+        <div class="background-text">Over Ear</div>
+        <div class="content">
+            <h3>JBL Live 660NC</h3>
+            <h1>Keep The Noise Out,Or ln.</h1>
+            <h1>You Choose.</h1>
+            <p>
+                <span class="discount-price">$9,999</span> 
+                <span class="original-price">$14,999</span>
+            </p>
+            <button class="button">Shop now</button>
+        </div>
+        <img  class="image-right" src="C:\Users\SIRI\Desktop\jbl660nc-1.png" alt="jbl660nc-1" height="550px" width="550px">
+    </section>
+    </body>
+</html>

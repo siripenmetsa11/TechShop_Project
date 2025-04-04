@@ -265,6 +265,67 @@
             text-align: center;
             color: white;
         }
+        .adv-items{
+            display: flex;
+            align-items: center;
+            gap :20px;
+            padding-left: 60px;
+            justify-content: space-around;
+            margin-top: 8%;
+        }
+        .advantage-item{
+            display: flex;  
+            align-items: center; 
+            max-width: 300px;
+        }
+        .adv-items h5{
+            font-size: 18px; 
+            color: white; 
+            margin: 0;
+        }
+        .adv-items p{
+            font-size: 14px; 
+            color:#aaa; 
+            margin: 5px 0 0 0;
+        }
+        .foot{
+            background-color:black;
+            padding: 50px 5%; 
+            text-align: center; 
+            border-top: 1px solid #333;
+        }
+        .col1{
+            color: white;
+            flex: 1; 
+            min-width: 200px; 
+            text-align: left;
+        }
+        .col1 h1{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+        }
+        .col1 p{
+            color: #bdc3c7; 
+            margin-top: 15px;
+        }
+        .col2 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+   
+        }
+        .col3 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+            
+        }
+        .col4 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+        }
         </style>
     </head>
     <body>   
@@ -594,7 +655,87 @@
 
     <section class="adv">
         <h1>Our Advantages</h1>
-        
+        <div class="adv-items">
+            <div class="advantage-item">
+                <i class="fas fa-shipping-fast" style="font-size: 35px; color: red; margin-right: 15px; "></i>
+            <div>
+                  <h5>Express Delivery</h5>
+                  <p>Ships in 24 hours</p>
+       </div>
+       </div>
+
+       <div class="advantage-item">
+        <i class="fas fa-shield-alt"style="font-size: 35px; color: red; margin-right: 15px; "></i>
+    <div>
+          <h5>Brand Warranty</h5>
+          <p>100% Original Products</p>
+</div>
+</div>
+
+<div class="advantage-item">
+    <i class="fa-solid fa-tags"style="font-size: 35px; color: red; margin-right: 15px; "></i>
+<div>
+      <h5>Exciting Deals</h5>
+      <p>On all prepaid orders</p>
+</div>
+</div>
+
+<div class="advantage-item">
+    <i class="fa-solid fa-credit-card"style="font-size: 35px; color: red; margin-right: 15px; "></i>
+<div>
+      <h5>Secure Payments</h5>
+      <p>SSL/Secure certificate</p>
+</div>
+</div>
     </section>
+
+
+
+
+    <footer class="foot">
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; margin-bottom: 30px;">
+            <div class="col1">
+                <h1>Tech-Shop</h1>
+                <p>Subscribe to our Email alerts to receive early discount offers,and <br>new products info.</p>
+                <label for="email" ></label>
+                <input type="email" id="email" name="email" placeholder="E-mail Address"  style="background-color:black;flex-direction: row; width: 300px;height: 30px;margin-top: 30px;"><br>
+                <button style="color: white; background-color: red; font-size: 18px;margin-top: 50px;">Subscribe</button>
+            </div>
+            <div class="col2">
+                <h3>Help</h3>
+                <ul type="none">
+                    <li style="margin-bottom: 10px;">FAQs</li>
+                    <li style="margin-bottom: 10px;">Track Order</a></li>
+                    <li style="margin-bottom: 10px;">Cancle Order</li>
+                    <li style="margin-bottom: 10px;">Return order</li>
+                    <li style="margin-bottom: 10px;">Warranty</li>
+                </ul>
+            </div>
+
+
+            <div class="col3">
+                <h3>Policies</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;">Return policy</li>
+                    <li style="margin-bottom: 10px;">security</li>
+                    <li style="margin-bottom: 10px;">Sitemap</li>
+                    <li style="margin-bottom: 10px;">Privacy Policy</li>
+                    <li style="margin-bottom: 10px;">Terms&conditions</li>
+                </ul>
+            </div>
+
+            <div class="col4">
+                <h3>Company</h3>
+                <ul type="none">
+                    <li style="margin-bottom: 10px;">About Us</li>
+                    <li style="margin-bottom: 10px;">Contact Us</li>
+                    <li style="margin-bottom: 10px;">Service centers</li>
+                    <li style="margin-bottom: 10px;">Careers</li>
+                    <li style="margin-bottom: 10px;">Affiliates</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
     </body>
 </html>

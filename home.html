@@ -33,7 +33,7 @@
             .search-box, .cart, .profile{
             position: absolute;
             right: 0px;
-            top: 50px;
+            top: 70%;
             padding: 15px;
             border-radius: 20px;
             width: 250px;
@@ -43,26 +43,69 @@
         .search-box {
             width: 200px;
         }
-        .icon-container:hover .search-box,
-        .icon-container:hover .cart,
+        .icon-container:hover .search-box{
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+            left:-170%;
+        }
+        .icon-container:hover .cart{
+            opacity: 1;
+            visibility: visible;
+            top: 60%;
+            left:-5%;
+        }
         .icon-container:hover .profile{
             opacity: 1;
             visibility: visible;
-            top: 50px;
+            top: 100%;
+            left:-300%;
+
         }
         .search-box input {
-            width: 50%;
-            padding: 10px;
+            width: 25%;
+            padding: 8px;
             border: 1px solid #ddd;
+            background-color:#333;
             border-radius: 5px;
             outline: none;
         }
         .cart input {
-            width: 50%;
-            padding: 10px;
+            width: 15%;
+            padding: 8px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            background-color:#333;
             outline: none;
+            font-size: 15px;
+        }
+        .profile{
+            width: 350%;
+            height:250%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color:#333;
+            outline: none;
+            font-size: 15px;
+
+        }
+        .profile button{
+            padding:10px;
+            background-color: #333;
+            border-color: white;
+            color:inherit;
+            text-decoration: none;
+        }
+        .profile h4{
+            margin-right:30%;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: white; 
+            margin: 20px; 
+            margin-left: 5px;   
         }
        .background-text {
             text-align: center;
@@ -83,7 +126,8 @@
             z-index: 2;
             font-size: 20px;
             color: white;
-            padding: 100px;
+            padding: 120px;
+            left: 50px;
             height: 2000px;
         }
         .original-price{
@@ -94,16 +138,19 @@
             color: white;
             font-size: 20px;
             padding: 10px 20px;
+            margin-top: 45px;
         }
         .image-right{
             float: right;
-            margin: 80px;
+            margin: 50px;
+            
         }
+        
         </style>
     </head>
     <body>   
         <nav class="head">
-            <h2>Tech shop</h2>
+            <h2>Tech-Shop</h2>
             <ul class="nav" type="none">
                 <li>
                     <div class="icon-container">
@@ -117,7 +164,7 @@
                     <div class="icon-container">
                 <li> <i class="fa-solid fa-cart-shopping"></i>
                     <div class="cart">
-                        <input type="text" placeholder="cart">
+                        <input type="text" placeholder="Cart">
                     </div>
                 </div>
             </li>
@@ -127,7 +174,9 @@
                     <div class="profile">
                         <h3>Hello!</h3>
                         <p>Access account and manage orders</p>
-                        <a href="signin.html">Sign In</a>
+                        <button><a href="signin.html">Login / Signup</a></button>
+                        <hr>
+                        <h4>Please Login</h4>
                     </div>
                 </div>
                 </li>

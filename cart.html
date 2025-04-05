@@ -5,7 +5,7 @@
         <style>
       
             body{
-                background-color: black;
+                background-color:black;
             }
             .head{
                 display: flex;
@@ -60,7 +60,6 @@
             visibility: visible;
             top: 100%;
             left:-300%;
-
         }
         .search-box input {
             width: 25%;
@@ -88,7 +87,6 @@
             background-color:#333;
             outline: none;
             font-size: 15px;
-
         }
         .profile button{
             padding:10px;
@@ -107,10 +105,159 @@
             margin: 20px; 
             margin-left: 5px;   
         }
+        .container{
+            display: flex;
+            margin: 100;
+            justify-content: center; 
+            align-items: center; 
+            gap: 0px;
+        }
+        .carts {
+            display: flex;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px black;
+            max-width: 850px;
+            width: 400%;
+        }
+        .cart-items {
+            width: 100%;
+            max-height: 400px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-right: 10px;
+            border-radius: 15px;
+            scrollbar-width:auto;
+            scrollbar-color: grey transparent;  
+        }
+        .item {
+            display: flex;
+            gap: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+        .item img {
+            
+            height: 100px;
+            border-radius: 8px;
+        }
+        .details {
+            flex : 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+        }
+        .header h4 {
+            font-size: 16px;
+            color: white;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #aaa;
+            margin-left: 8px;
+        }
+        .quantity {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            margin-top: 10px;     
+        }
+        .quantity button {
+            background-color: #333;
+            border: 2px solid#333;
+            color: white;
+            font-size: 10x;
+            padding: 6px 12px;
+            border-radius: 4px;
+            width: 60px;
+        }
+        .summary {
+            flex: 1;
+            margin-left: 40px;
+            background-color: black;
+            max-width: 400px;/* Fixed height for scroll effect */
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding-right: 25px;
+        }
+        .order-summary h2 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 70px;
+            color: red;
+        }
+
+        .checkout-btn {
+            background: red;
+            margin-left: 80px;
+            margin-bottom: 10px;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;  
+            width: 370px;
+        }
+        .foot{
+            background-color:black;
+            padding: 50px 5%; 
+            text-align: center; 
+            border-top: 1px solid #333;
+        }
+        .col1{
+            color: white;
+            flex: 1; 
+            min-width: 200px; 
+            text-align: left;
+        }
+        .col1 h1{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+        }
+        .col1 p{
+            color: #bdc3c7; 
+            margin-top: 15px;
+        }
+        .col2 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+   
+        }
+        .col3 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+            
+        }
+        .col4 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+        }
+        .sec{
+            color: #777; 
+            border-top: 1px solid #333; 
+            text-align: left; 
+            width: 100%;
+        }
         </style>
         </head>
         <body>
-            <body>
                 <nav class="head">
                     <h2>Tech-Shop</h2>
                     <ul class="nav" type="none">
@@ -129,7 +276,6 @@
                             </div>
                         </div>
                     </li>
-        
                     <div class="icon-container">
                         <li> <i class="fa-regular fa-user"></i>
                             <div class="profile">
@@ -143,6 +289,160 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="container">
+                    <div class="carts">
+                        <div class="cart-items">
+
+
+                            <div class="item">
+                                <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-1.png" class="main" alt="jbl660nc-1">
+                                <div class="details">
+                                    <div class="header">
+                                        <h4 >JBL Live 660NC Wireless Over-Ear NC Headphones</h4>
+                                        <button class="delete-btn" >
+                                            <i class="fa-solid fa-trash" style="color: #c2c7d1;"></i>
+                                        </button>
+                                    </div>
+                                    <p><span class="price" style="color: white;">₹8,999</span>
+                                        <span class="original-price" style="text-decoration: line-through; color: grey;">₹11,999</span></p>
+                                        <div class="quantity" style="display: flex; flex-direction: row; gap: 8px; align-items: center; margin-top: 10px;">
+                                        <button>-</button>
+                                        <button style="background-color:#1e1e1e;"><span>1</span></button>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <img src="C:\Users\SIRI\Desktop\project req\boat518-1.png" class="main" alt="boat518-1">
+                                <div class="details">
+                                    <div class="header">
+                                        <h4 >boAt Rockerz 518 On-Ear Wireless Headphones</h4>
+                                        <button class="delete-btn" >
+                                            <i class="fa-solid fa-trash" style="color: #c2c7d1;"></i>
+                                        </button>
+                                    </div>
+                                    <p><span class="price" style="color: white;">₹1,299</span>
+                                        <span class="original-price" style="text-decoration: line-through; color: grey;">₹3,990</span></p>
+                                        <div class="quantity" style="display: flex; flex-direction: row; gap: 8px; align-items: center; margin-top: 10px;">
+                                        <button>-</button>
+                                        <button style="background-color:#1e1e1e;"><span>1</span></button>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="item">
+                                <img src="C:\Users\SIRI\Desktop\project req\boat131-1.png" class="main" alt="boat518-1">
+                                <div class="details">
+                                    <div class="header">
+                                        <h4 >boAt Airdopes 131 Wireless In-Ear Earbuds</h4>
+                                        <button class="delete-btn" >
+                                            <i class="fa-solid fa-trash" style="color: #c2c7d1;"></i>
+                                        </button>
+                                    </div>
+                                    <p><span class="price" style="color: white;">₹1,099</span>
+                                        <span class="original-price" style="text-decoration: line-through; color: grey;">₹2,990</span></p>
+                                        <div class="quantity" style="display: flex; flex-direction: row; gap: 8px; align-items: center; margin-top: 10px;">
+                                        <button>-</button>
+                                        <button style="background-color:#1e1e1e;"><span>1</span></button>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="item">
+                                <img src="C:\Users\SIRI\Desktop\project req\boat110-1.png" class="main" alt="boat518-1">
+                                <div class="details">
+                                    <div class="header">
+                                        <h4 >boAt BassHeads 110 In-Ear Wired Earphones</h4>
+                                        <button class="delete-btn" >
+                                            <i class="fa-solid fa-trash" style="color: #c2c7d1;"></i>
+                                        </button>
+                                    </div>
+                                    <p><span class="price" style="color: white;">₹449</span>
+                                        <span class="original-price" style="text-decoration: line-through; color: grey;">₹999</span></p>
+                                        <div class="quantity" style="display: flex; flex-direction: row; gap: 8px; align-items: center; margin-top: 10px;">
+                                        <button>-</button>
+                                        <button style="background-color:#1e1e1e"><span>1</span></button>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        </div>
+
+
+                        <div class="summary">
+                            <h3 style="font-size: 22px; padding-left: 70px;color: white;">Order Summary(4items)</h3>
+                            <p style="font-size: 17px;display: flex; padding-left: 70px;justify-content: space-between;color: white;">Original Price<span>₹22,978</span></p>
+                            <p style="font-size: 17px;display: flex; padding-left: 70px;justify-content: space-between;color: white;">Discount<span style="color: green; font-weight: bold;font-size:medium;">-₹10,132</span></p>
+                            <p style="font-size: 17px;display: flex; padding-left: 70px;justify-content: space-between;color: white;">Original Price<span style="color: green;font-weight: bold;font-size: medium;">Free</span></p>
+                            <hr style="color: grey; margin-left: 60px;width: 100%;">
+                            <h2 style="font-size: 18px;display: flex; padding-left: 70px;justify-content: space-between;color: white;">Total Price<span style="color: white;">₹12,846</span></h2>
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                    </div>
+
+                    <footer class="foot">
+                        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; margin-bottom: 30px;">
+                            <div class="col1">
+                                <h1>Tech-Shop</h1>
+                                <p>Subscribe to our Email alerts to receive early discount offers,and <br>new products info.</p>
+                                <label for="email" ></label>
+                                <input type="email" id="email" name="email" placeholder="E-mail Address"  style="background-color:black;flex-direction: row; width: 300px;height: 30px;margin-top: 30px;"><br>
+                                <button style="color: white; background-color: red; font-size: 18px;margin-top: 50px;">Subscribe</button>
+                            </div>
+                            <div class="col2">
+                                <h3>Help</h3>
+                                <ul type="none">
+                                    <li style="margin-bottom: 10px;">FAQs</li>
+                                    <li style="margin-bottom: 10px;">Track Order</a></li>
+                                    <li style="margin-bottom: 10px;">Cancle Order</li>
+                                    <li style="margin-bottom: 10px;">Return order</li>
+                                    <li style="margin-bottom: 10px;">Warranty</li>
+                                </ul>
+                            </div>
                 
+                
+                            <div class="col3">
+                                <h3>Policies</h3>
+                                <ul style="list-style: none;">
+                                    <li style="margin-bottom: 10px;">Return policy</li>
+                                    <li style="margin-bottom: 10px;">security</li>
+                                    <li style="margin-bottom: 10px;">Sitemap</li>
+                                    <li style="margin-bottom: 10px;">Privacy Policy</li>
+                                    <li style="margin-bottom: 10px;">Terms&conditions</li>
+                                </ul>
+                            </div>
+                
+                            <div class="col4">
+                                <h3>Company</h3>
+                                <ul type="none">
+                                    <li style="margin-bottom: 10px;">About Us</li>
+                                    <li style="margin-bottom: 10px;">Contact Us</li>
+                                    <li style="margin-bottom: 10px;">Service centers</li>
+                                    <li style="margin-bottom: 10px;">Careers</li>
+                                    <li style="margin-bottom: 10px;">Affiliates</li>
+                                </ul>
+                            </div>
+                            <div class="sec">
+                            <p>2025|All Rights Reserved.</p>
+                            <ul style="list-style: none; padding: 0; display: flex; gap: 2px; margin-left:80%; margin-top: -4%;;">
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                                <li><i class="fa-brands fa-x-twitter"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </footer>
         </body>
 </html>

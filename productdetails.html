@@ -2,74 +2,231 @@
 <html>
     <head>
         <title>Product details</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-         body {
+      
+            body{
                 background-color: black;
+            }
+            .head{
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 0%;
+                flex-wrap: wrap;
+                justify-content:space-between ;
+                color: white;
             }
-            .images {
-                display: flex;
-                flex-direction: column;
-                gap: 100px;
-                justify-content: center;
-                align-items: center;
-                margin-left: 5%;
-                margin-top: 5%;
-            }
-            .images img{
-                border: 2px solid white;
-                width: 82px;
-                height: 82px;
-            }
-            .images1 img{
-                width: 600px;
-                height: 600px;
-                margin-right:500px;
-                margin-top: 10%;
-            }
-           .details{
-             color: white;
-             margin-left:-30%;
-             margin-top: -200px;
-           
+           h2{
+            margin: 20px;
            }
+            .nav{
+                display: flex; 
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            ul li{
+                margin: 20px;
+                color: white;
+                padding: 10px;
+            } 
+            .icon-container{
+                position: relative;
+                cursor: pointer;
+            }
+            .search-box, .cart, .profile{
+            position: absolute;
+            right: 0px;
+            top: 70%;
+            padding: 15px;
+            border-radius: 20px;
+            width: 250px;
+            visibility: hidden;
+            z-index: 10;
+        }
+        .search-box {
+            width: 200px;
+        }
+        .icon-container:hover .search-box{
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+            left:-170%;
+        }
+        .icon-container:hover .cart{
+            opacity: 1;
+            visibility: visible;
+            top: 60%;
+            left:-5%;
+        }
+        .icon-container:hover .profile{
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+            left:-300%;
+
+        }
+        .search-box input {
+            width: 25%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            background-color:#333;
+            border-radius: 5px;
+            outline: none;
+        }
+        .cart input {
+            width: 15%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color:#333;
+            outline: none;
+            font-size: 15px;
+        }
+        .profile{
+            width: 350%;
+            height:250%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color:#333;
+            outline: none;
+            font-size: 15px;
+
+        }
+        .profile button{
+            padding:10px;
+            background-color: #333;
+            border-color: white;
+            color:inherit;
+            text-decoration: none;
+        }
+        .profile h4{
+            margin-right:30%;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: white; 
+            margin: 20px; 
+            margin-left: 5px;   
+        }
+          .images{
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+            padding: 20px;
+          }
+          .images1{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 80px;
+          }
+          .main-img{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-radius: 10px;
+            height: 550px;
+            position: relative;
+        }
+        .main{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: -5%;
+            left: 10%;
+        
+        }
+        .details{
+            width: 40%;
+            padding: 20px;
+            background-color:black;
+            border-radius: 10px;
+        }
+        .specific{
+            display: flex; 
+            justify-content: center; 
+            gap: 180px;
+        }
         </style>
     </head>
     <body>
-        <div class="images">
-        <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-1.png" alt="jbl660nc-1" width="80px" height="80px">
-        <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-2.png" alt="jbl660nc-2" width="80px" height="80px">
-        <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-3.png" alt="jbl660nc-3" width="80px" height="80px">
-        <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-4.png" alt="jbl660nc-3" width="80px" height="80px">
+        <nav class="head">
+            <h2>Tech-Shop</h2>
+            <ul class="nav" type="none">
+                <li>
+                    <div class="icon-container">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <div class="search-box">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    </div>
+                    </li>
+                    <div class="icon-container">
+                <li> <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart">
+                        <input type="text" placeholder="Cart">
+                    </div>
+                </div>
+            </li>
 
-        </div>
+            <div class="icon-container">
+                <li> <i class="fa-regular fa-user"></i>
+                    <div class="profile">
+                        <h3>Hello!</h3>
+                        <p>Access account and manage orders</p>
+                        <button><a href="signin.html">Login / Signup</a></button>
+                        <hr>
+                        <h4>Please Login</h4>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+       <div class="images">
         <div class="images1">
-        <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-1.png" alt="jbl660nc-1" width="500px" height="500px">
-    </div>
-    <div class="details">
-        <h3 style="margin-top:300px; margin-right:300px;">JBL Live 660NC</h3>
-        <p>Wireless Over-Ear NC Headphones</p>
-        <div class="rating">
+            <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-1.png" alt="jbl660nc-1" width="80px" height="80px" style="border: 1px solid white;">
+            <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-2.png" alt="jbl660nc-2" width="80px" height="80px"style="border: 1px solid white;">
+            <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-3.png" alt="jbl660nc-3" width="80px" height="80px"style="border: 1px solid white;">
+            <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-4.png" alt="jbl660nc-3" width="80px" height="80px"style="border: 1px solid white;">
+        </div>
+        <div class="main-img">
+            <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-1.png" class="main" alt="jbl660nc-1">
+        </div>
+
+        <div class="details">
+            <h2 style ="margin-bottom: 5px;color: white;">JBL Live 660NC</h2>
+            <p style="margin-bottom: 5px;margin-left: 25px; color: white;">Wireless Over-Ear NC Headphones</p>
+            <div style="margin-left: 25px;">
             <span style="color: red; font-size: 16px;">&#9733;</span>
             <span style="color: red; font-size: 16px;">&#9733;</span>
             <span style="color: red; font-size: 16px;">&#9733;</span>
-            <span style="color: red; font-size: 16px;">&#9733;</span>
-            </div>
-            <hr style="color: grey; width:500px;margin-top: 25px;margin-right: 100px;">   
+            <span style="color: red; font-size: 16px;">&#9733;</span></div>
+            <div style="border: 1px solid #333; margin-top: 25px;"><span></span></div>
             <span style="color: white; font-weight: bold; font-size: 18px;">₹9,999</span>
             <span style="color: #777; text-decoration: line-through; font-size: 14px;">₹14,999</span>
             <p style="color: darkgreen; font-weight: bold;">You save:₹5,000(33%)</p>
             <p style="color: #777;">(Inclusive of all taxes)</p>
-            <button style="color: white; background-color: green; width:120px; height: 50px; font-weight: bold;border-radius:5px;border: 1px solid green;">&#10004;In Stock</button>
-            <hr style="margin-top: 25px; margin-right: 100px;">
-            <p>Offers and Dicounts</p>
+            <span><button style="background-color: green; color: white; font-size: 16px; margin-left: 250px; border-radius: 5px;width: 100px; height: 40px;border: 1px solid green;"> ✔instock</button></span>
+            <div style="border: 1px solid #333; margin-top: 25px;"><span></span></div>
+            <p style="color: white;">Offers and Dicounts</p>
             <button style="color: white; background-color: black;width: 180px;height: 40px; border: 1px solid white;">No cost EMI on credit Card</button>
-            <button style="color: white; background-color: black;width: 180px;height: 40px; border: 1px solid white;margin-left: 8px;">Pay Later & Avail Cashback</button>  
-            <hr style="margin-top:40px ; margin-right: 100px;">
+            <button style="color: white; background-color: black;width: 180px;height: 40px; border: 1px solid white;margin-left: 8px;">Pay Later & Avail Cashback</button>
+            <div style="border: 1px solid #333; margin-top: 25px;"><span></span></div>
             <button style="color: white; background-color: red; width: 180px; height: 40px;margin-top: 15px;border-radius:5px; border: 1px solid red;">Add to cart</button>  
+            </div>
         </div>
+       </div>
+
+       <div style="top: 30px;">
+        <div class="specific">
+            <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Specifications</button>
+            <button style="background-color: transparent; color: white; border: none; font-weight: bold; cursor: pointer;">Overview</button>
+            <button style="background-color: transparent; color: white; border: none; font-weight: bold; cursor: pointer;">Reviews</button>
+        </div>
+       </div>
     </body>
 </html>

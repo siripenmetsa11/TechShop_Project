@@ -151,6 +151,136 @@
             justify-content: center; 
             gap: 180px;
         }
+        .product-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 40px;
+            justify-items: center;
+        }
+        .product1{
+            background-color: #2a2a2a;
+            border-radius: 7px;
+            padding: 15px;
+            transition: transform 0.3s;
+            border: 2px solid #444;
+            width: 100%;
+            max-width: 280px;
+            box-sizing: border-box;
+        }
+        .product1 img{
+            border-radius: 8px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .imgtxt{
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        .star{
+            display: flex;
+            gap: 2px;
+            margin-bottom: 5px;
+        }
+        .imgtxt h3{
+            color: white;
+            font-size: 16px;
+            margin: 5px;
+            font-weight: 400;
+        }
+        .imgtxt p{
+            color: #aaa;
+            font-size: 13px;
+            margin: 5px;
+        }
+        .product1 button{
+            width: 100%; 
+            color: white;
+            background-color: red;
+            padding: 10px; 
+            border: none;  
+            border-radius: 4px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            margin-top: 10px;
+        }
+        .adv{
+            background-color: #1a1a1a; 
+            padding: 40px 0; 
+            display: flex; 
+            flex-direction: column;
+            margin-top: 5%;
+        }
+        .adv h1{
+            text-align: center;
+            color: white;
+        }
+        .adv-items{
+            display: flex;
+            align-items: center;
+            gap :20px;
+            padding-left: 60px;
+            justify-content: space-around;
+            margin-top: 8%;
+        }
+        .advantage-item{
+            display: flex;  
+            align-items: center; 
+            max-width: 300px;
+        }
+        .adv-items h5{
+            font-size: 18px; 
+            color: white; 
+            margin: 0;
+        }
+        .adv-items p{
+            font-size: 14px; 
+            color:#aaa; 
+            margin: 5px 0 0 0;
+        }
+        .foot{
+            background-color:black;
+            padding: 50px 5%; 
+            text-align: center; 
+            border-top: 1px solid #333;
+        }
+        .col1{
+            color: white;
+            flex: 1; 
+            min-width: 200px; 
+            text-align: left;
+        }
+        .col1 h1{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+        }
+        .col1 p{
+            color: #bdc3c7; 
+            margin-top: 15px;
+        }
+        .col2 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+   
+        }
+        .col3 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+            
+        }
+        .col4 h3{
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 18px;
+        }
+        .sec{
+            color: #777; 
+            border-top: 1px solid #333; 
+            text-align: left; 
+            width: 100%;
+        }
         </style>
     </head>
     <body>
@@ -220,13 +350,209 @@
             </div>
         </div>
        </div>
-
        <div style="top: 30px;">
         <div class="specific">
             <button style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Specifications</button>
             <button style="background-color: transparent; color: white; border: none; font-weight: bold; cursor: pointer;">Overview</button>
             <button style="background-color: transparent; color: white; border: none; font-weight: bold; cursor: pointer;">Reviews</button>
         </div>
+        <ul type="none" style="color: white;display:flex;flex-direction: column;">
+            <li>Brand</li>
+            <li>Model</li>
+            <li>Generic Name</li>
+            <li>Headphones Type</li>
+            <li>Connectivity</li>
+            <li>Microphone</li>
+        </ul>
+
+        <ul type="none" style="color: white; margin-left: 425px; display: flex; flex-direction: column; margin-top:-500px;">
+            <li>JBL</li>
+            <li>JBL Live660NC</li>
+            <li>Headphones</li>
+            <li>Over Ear</li>
+            <li>Wireless</li>
+            <li>Yes</li>
+        </ul>
+        <div class="relate" style="color: white;text-align: center;">
+            <h1>Related products</h1>
+            <div class="product-grid">
+                <div class="product1">
+    
+                        <img src="C:\Users\SIRI\Desktop\project req\jbl660nc-1.png" alt="Product 1" width="100%" height="180px">
+                                <div class="imgtxt">
+                    <div class="star">
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                    </div>
+                    <h3>JBL Live 660NC</h3>
+                    <P>Wireless Over-Ear NC Headphones</P>
+                    <hr>
+                    <div class="price1">
+                        <span style="color: white; font-weight: bold; font-size: 18px;">₹9,999</span>
+                        <span style="color: #777; text-decoration: line-through; font-size: 14px;">₹14,999</span>
+                    </div>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+    
+            <div class="product1">
+                <img src="C:\Users\SIRI\Desktop\project req\boat518-1.png" alt="Product 1" width="100%" height="180px">
+                <div class="imgtxt">
+                    <div class="star">
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                    </div>
+                    <h3>boAt Rockerz 518</h3>
+                    <P>On-Ear Wireless Headphones</P>
+                    <hr>
+                    <div class="price1">
+                        <span style="color: white; font-weight: bold; font-size: 18px;">₹1,299</span>
+                        <span style="color: #777; text-decoration: line-through; font-size: 14px;">₹3,990</span>
+                    </div>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+    
+            <div class="product1">
+                <img src="C:\Users\SIRI\Desktop\project req\boat131-1.png" alt="Product 1" width="100%" height="180px">
+                <div class="imgtxt">
+                    <div class="star">
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                    </div>
+                    <h3>boAt Airdops 131</h3>
+                    <P>Wireless In-Ear Earbids</P>
+                    <hr>
+                    <div class="price1">
+                        <span style="color: white; font-weight: bold; font-size: 18px;">₹1,099</span>
+                        <span style="color: #777; text-decoration: line-through; font-size: 14px;">₹2,990</span>
+                    </div>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+    
+            <div class="product1">
+                <img src="C:\Users\SIRI\Desktop\project req\boat110-1.png" alt="Product 1" width="100%" height="180px">
+                <div class="imgtxt">
+                    <div class="star">
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                        <span style="color: red; font-size: 16px;">&#9733;</span>
+                    </div>
+                    <h3>boAt BassHeads 110</h3>
+                    <P>In-Ear Wired Earphones</P>
+                    <hr>
+                    <div class="price1">
+                        <span style="color: white; font-weight: bold; font-size: 18px;">₹449</span>
+                        <span style="color: #777; text-decoration: line-through; font-size: 14px;">₹999</span>
+                    </div>
+                </div>
+                <button>Add to Cart</button>
+            </div></div>
+        </div>
        </div>
+
+
+       <section class="adv">
+        <h1>Our Advantages</h1>
+        <div class="adv-items">
+            <div class="advantage-item">
+                <i class="fas fa-shipping-fast" style="font-size: 35px; color: red; margin-right: 15px; "></i>
+            <div>
+                  <h5>Express Delivery</h5>
+                  <p>Ships in 24 hours</p>
+       </div>
+       </div>
+
+       <div class="advantage-item">
+        <i class="fas fa-shield-alt"style="font-size: 35px; color: red; margin-right: 15px; "></i>
+    <div>
+          <h5>Brand Warranty</h5>
+          <p>100% Original Products</p>
+</div>
+</div>
+
+<div class="advantage-item">
+    <i class="fa-solid fa-tags"style="font-size: 35px; color: red; margin-right: 15px; "></i>
+<div>
+      <h5>Exciting Deals</h5>
+      <p>On all prepaid orders</p>
+</div>
+</div>
+
+<div class="advantage-item">
+    <i class="fa-solid fa-credit-card"style="font-size: 35px; color: red; margin-right: 15px; "></i>
+<div>
+      <h5>Secure Payments</h5>
+      <p>SSL/Secure certificate</p>
+</div>
+</div>
+    </section>
+
+
+    <footer class="foot">
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; margin-bottom: 30px;">
+            <div class="col1">
+                <h1>Tech-Shop</h1>
+                <p>Subscribe to our Email alerts to receive early discount offers,and <br>new products info.</p>
+                <label for="email" ></label>
+                <input type="email" id="email" name="email" placeholder="E-mail Address"  style="background-color:black;flex-direction: row; width: 300px;height: 30px;margin-top: 30px;"><br>
+                <button style="color: white; background-color: red; font-size: 18px;margin-top: 50px;">Subscribe</button>
+            </div>
+            <div class="col2">
+                <h3>Help</h3>
+                <ul type="none">
+                    <li style="margin-bottom: 10px;">FAQs</li>
+                    <li style="margin-bottom: 10px;">Track Order</a></li>
+                    <li style="margin-bottom: 10px;">Cancle Order</li>
+                    <li style="margin-bottom: 10px;">Return order</li>
+                    <li style="margin-bottom: 10px;">Warranty</li>
+                </ul>
+            </div>
+
+
+            <div class="col3">
+                <h3>Policies</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;">Return policy</li>
+                    <li style="margin-bottom: 10px;">security</li>
+                    <li style="margin-bottom: 10px;">Sitemap</li>
+                    <li style="margin-bottom: 10px;">Privacy Policy</li>
+                    <li style="margin-bottom: 10px;">Terms&conditions</li>
+                </ul>
+            </div>
+
+            <div class="col4">
+                <h3>Company</h3>
+                <ul type="none">
+                    <li style="margin-bottom: 10px;">About Us</li>
+                    <li style="margin-bottom: 10px;">Contact Us</li>
+                    <li style="margin-bottom: 10px;">Service centers</li>
+                    <li style="margin-bottom: 10px;">Careers</li>
+                    <li style="margin-bottom: 10px;">Affiliates</li>
+                </ul>
+            </div>
+            <div class="sec">
+            <p>2025|All Rights Reserved.</p>
+            <ul style="list-style: none; padding: 0; display: flex; gap: 2px; margin-left:80%; margin-top: -4%;;">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+       
     </body>
 </html>
